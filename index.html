@@ -1,12 +1,257 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Basic Website</title>
+    <title>Game Portfolio</title>
+    <link rel="stylesheet" href="web.css">
 </head>
 <body>
-    <h1>Hello, World!</h1>
-    <p>This is my basic index.html file.</p>
+
+    <header>
+        <h1>Erja - Game Portfolio</h1>
+        <nav>
+            <a onclick="showPage('home')">Home</a>
+            <a onclick="showPage('projects')">Game Projects</a>
+            <a onclick="showPage('contact')">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="page active">
+            <h2>Welcome!</h2>
+            <p>
+                Hi, I'm Erja Manninen. I am a third year game producer student and a software engineer with over 10 years of experience working in teambased software 
+                projects on IT-industry. 
+
+                You can find some old and new projects I have worked on independently and as a part of a team!
+            </p>
+        </section>
+
+        <section id="projects" class="page">
+
+            <h2>Game Projects</h2>
+        
+            <h3 class="project-category">School Projects</h3>
+        
+            <div class="project-group">
+              
+                <div class="project">
+
+                    <div class="project-text">
+
+                        <h4>Trauma - Spring 2026</h4>
+                
+                        <p class="project-desc">
+                            Customer project in development
+                        </p>
+                
+                        <p><strong>Engine:</strong> Unreal</p>
+                        <p><strong>Role:</strong> Programmer</p>        
+                
+                    </div>
+                </div>
+       
+
+                <div class="project">
+                    <img src="images/joydepress.png" class="project-img">
+                    <div class="project-text">
+
+                        <h4>Joy Depress -  Fall 2025</h4>
+                
+                        <p>
+                            Sort a closed down theme park into trash using Conveyor belts, Diverters and Compactors. The purer the patch, the bigger the profit.
+                        </p>
+                
+                        <p><strong>Platform:</strong> PC </p>
+                        <p><strong>Technologies:</strong> Unreal Engine, BP and C++</p>
+                        <p><strong>My role:</strong> Producer and Programmer</p>
+                
+                        <a href="https://adaras.itch.io/joy-depress"">Play on Itch.io</a>
+                
+                    </div>
+
+                </div>
+                
+                <div class="project">
+                    <img src="images/nightOfTheLivingSkurre.png" class="project-img">
+                    <div class="project-text">
+                        <h4>Night of the Living Skurre Spring 2025</h4>
+                
+                        <p>
+                            A 3D, third person action-platformer. Explore and set up various pranks. Hide and avoid detection, get chased under the couch, watch and laugh as people trip down the stairs, throw pinecones to annoy someone until they snap in this comedic game about a squirrel protecting their home!
+                        </p>
+                
+                        <p><strong>Platform:</strong> PC </p>
+                        <p><strong>Technologies:</strong> Unity, C#</p>
+                        <p><strong>My role:</strong> Programmer</p>
+                
+                        <p><a href="https://store.steampowered.com/app/3645280/Night_of_the_Living_Skurre/"">Play on Steam</a></p>
+                        <a href="https://pibbrz.itch.io/night-of-the-living-skurre"">Play on Itch.io</a>
+                
+                    </div>
+                </div>
+
+                <div class="project">
+                    <img src="images/forbidden-technology.png" class="project-img">
+                    <div class="project-text">
+                        <h4>Forbidden Technology - Fall 2024</h4>
+                
+                        <p>
+                            Explore ancient civilizations across the universe to seek lost pieces of advanced technology. 
+                            These civilizations didn’t leave their precious artifacts unguarded. So, grab what you can and get back to the spaceship, navigating through debris, branching paths, and hostile robots.                            
+                        </p>
+                
+                        <p><strong>Platform:</strong> Mobile </p>
+                        <p><strong>Technologies:</strong> Unity, C#</p>
+                        <p><strong>My role:</strong> Producer and Programmer</p>
+                
+                        <p><a href="https://play.google.com/store/apps/details?id=com.muuttuvanimi.forbiddentechnology"">Play on Google Play</a></p>
+                        <a href="https://mossgreensheep.itch.io/forbidden-technology"">Play on Itch.io</a>
+                
+                    </div>
+                </div>
+
+                <div class="project">
+                    <img src="images/corpse-crafter.png" class="project-img">
+                    <div class="project-text">
+                        <h4>Corpse Crafter - Spring 2024</h4>
+                
+                        <p>
+                            Nearby villagers have had enough of you and your creepy experiments with corpses in the local cemetery. Now, you must defend yourself the only way you know how—with an army of the living dead!          
+                        </p>
+                
+                        <p><strong>Platform:</strong> PC </p>
+                        <p><strong>Technologies:</strong> Unity, C#</p>
+                        <p><strong>My role:</strong> Producer, Designer and Programmer</p>
+                
+                        <a href="https://adaras.itch.io/corpse-crafter"">Play on Itch.io</a>
+                
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="images/deadAndConfused.png" class="project-img">
+                    <div class="project-text">
+                        <h4>Dead and Confused - Spring 2024</h4>
+                
+                        <p>
+                            Bad news - you are dead! Now you have to find out how to reach your crypt so you can finally Rest In Peace. Explore the foggy cemetery, collect items and find keys so you can take on the hound in this cute and relaxing puzzle adventure game.          
+                        </p>
+                
+                        <p><strong>Platform:</strong> PC </p>
+                        <p><strong>Technologies:</strong> Unity, C#</p>
+                        <p><strong>My role:</strong> Producer, Artist, Designer and Programmer</p>
+                
+                        <a href="https://adaras.itch.io/dead-confused"">Play on Itch.io</a>
+                
+                    </div>
+                </div>
+
+                <div class="project">
+                    <img src="images/madberry.png" class="project-img">
+                    <div class="project-text">
+                        <h4>Madberry Dress Up - Fall 2023</h4>
+                
+                        <p>
+                            Create your desired outfit from several cool clothes and accessories.          
+                        </p>
+                
+                        <p><strong>Platform:</strong> PC </p>
+                        <p><strong>Technologies:</strong> Godot, C#</p>
+                        <p><strong>My role:</strong> Project Manager and Programmer</p>
+            
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="project-category">Game Jam Projects</h3>
+                    
+            <div class="project-group">
+
+                <div class="project">
+                    <img src="images/stock-beat.png" class="project-img">
+                    <div class="project-text">
+                        <h4>Stock Beat - Finnish Game Jam 2025</h4>
+                        <p>Fighting game where you battle against money crazed financing clerks after the financial bubble bursts.</p>
+                        <p>My role: Programmer</p>
+                        <p>Game Engine: Unity C#</p>
+                        <a href="https://realkam1.itch.io/stock-beat"">Play on Itch.io</a>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <img src="images/pojankalastus.png" class="project-img">
+                    <div class="project-text">
+                        <h4>Pojan kalastus - Kekri Jam Kajaani 2024</h4>
+                        <p>You play as the mother of Lemminkäinen, whose body has been chopped up and thrown into the dark river of Tuonela. Gather the pieces of your son to make him whole again.</p>
+                        <p>My role: Programmer</p>
+                        <p>Game Engine: Unity C#</p>
+                        <a href="https://adaras.itch.io/pojan-kalastus">Play on Itch.io</a>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <img src="images/library-jam.png" class="project-img">
+                    <div class="project-text">
+                        <h4>Library Run - Library Jam Kajaani 2024</h4>
+                        <p>Graphics by local childrens drawings. Choose your favorite character and get to the goal as fast as you can. </p>
+                        <p>My role: Programmer and Design</p>
+                        <p>Game Engine: Unity C#</p>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <img src="images/attackOfNitroTomato.png" class="project-img">
+                    <div class="project-text">
+                        <h4>Attack of Nitro Tomatoes - Finnish Game Jam 2024</h4>
+                        <p>Fight against the horde of wild tomatoes by running over them with a cool car.
+                            Possibility to "multiplayer". Join the game and control the car via Twitch chat.</p>
+                        <p>My role: Programmer</p>
+                        <p>Game Engine: Unity C#</p>
+                        <a href="https://globalgamejam.org/games/2024/attack-nitro-tomato-3
+                        ">View and download project</a>
+                    </div>
+                </div>
+
+            </div>
+        
+            <h3 class="project-category">Other Projects</h3>
+        
+            <div class="project-group">
+        
+                <div class="project">
+                    <img src="images/zelda-thesis.png" class="project-img">
+                    <div class="project-text">
+                        <h4>Bachelor Thesis - Software Engineer 2013</h4>
+                        <p>First Dungeon of the iconic The Legend of Zelda (NES) in 3D environment</p>
+                        <p>My role: I did everything by myself. Programming, 3d-models, animation, rigging, texturing, 2d-textures etc. Sounds and music are original.</p>
+                        <p>Game Engine: Unity C#</p>
+                        <a href="https://www.theseus.fi/bitstream/handle/10024/55798/Erja_Manninen.pdf?sequence=1&isAllowed=y">Read More</a>
+                    </div>
+                </div>
+        
+            </div>
+        
+        </section>
+
+        <section id="contact" class="page">
+            <h2>Contact</h2>
+            <p>Email: ermanninen@gmail.com</p>
+            <a href="https://www.linkedin.com/in/erja-manninen-9b708757/">LinkedIn</a>
+        </section>
+
+    </main>
+    <script>
+        function showPage(pageId) {
+            const pages = document.querySelectorAll('.page');
+
+            pages.forEach(page => {
+                page.classList.remove('active');
+            });
+
+            document.getElementById(pageId).classList.add('active');
+        }
+    </script>
+
 </body>
 </html>

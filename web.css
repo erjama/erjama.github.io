@@ -1,21 +1,115 @@
+
 body {
-  background-color: lightblue;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+
+  background:
+      linear-gradient(rgba(27, 0, 51, 0.85), rgba(10, 26, 58, 0.85)),
+      url("images/controller.png");
+
+    background-size: 85%;
+    background-position: center 120px;
+    background-attachment: fixed;
+
+    color: #dbe4f0;
+    min-height: 100vh;
 }
 
-h1 {
-  color: white;
+header {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 20px;
   text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  backdrop-filter: blur(5px);
 }
 
-p {
-  font-family: verdana;
-  font-size: 20px;
+header h1 {
+  margin: 0;
+  color: #b98cff;
 }
-</style>
-</head>
-<body>
 
-<h1>My First CSS Example</h1>
-<p>This is a paragraph.</p>
+nav {
+  margin-top: 20px;
+}
 
-</body>
+nav a {
+  color: #6fa8ff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+nav a:hover {
+  color: #b98cff;
+  text-shadow: 0 0 8px rgba(185,140,255,0.6);
+}
+
+main {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(185, 140, 255, 0.2);
+}
+
+main a {
+  color: #8fc9ff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+main a:hover {
+  color: #d7bfff;
+  text-shadow: 0 0 6px rgba(215,191,255,0.6);
+}
+
+.page {
+  display: none;
+}
+
+.page.active {
+  display: block;
+}
+
+.h2 {
+  text-align:center;
+}
+
+.project {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  backdrop-filter: blur(6px);
+}
+
+.project-img {
+  width: 200px;
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(185,140,255,0.3);
+}
+
+.project h3 {
+  padding: 20px;
+  gap: 20px;
+  margin-top: 0;
+  color: #b98cff;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #aaa;
+  font-size: 0.9em;
+}
